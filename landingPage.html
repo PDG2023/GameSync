@@ -4,36 +4,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Landing page</title>
+    <title>Board Games Party App</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.css"
         integrity="sha512-otONSJGv1l0LjJXcgyqi2MeKXtnthkiXAleeQjFJOKYcVD5u+mOuPb7xCnlsb74Ld+N0ONbP7KYRmW2/OWrvaA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .section {
+            padding: 2rem;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        /* Style the sections */
+        .section:not(#welcome) {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        #presentation-block {
+            background-color: rgb(240, 136, 0);
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: circle 2.5s ease;
+            width: 100%;
+            height: 100%;
+            clip-path: circle(50% at 100% 50%);
+
+            display: flex;
+            align-content: center;
+            align-items: center;
+            justify-content: flex-end;
+
+        }
+
+        #presentation-block img {
+
+            float: right;
+            height: 300px;
+            animation-delay: 1.8s !important;
+            transform: translate(100%);
+            animation-fill-mode: forwards !important;
+            animation: popFromRight 2.5s;
+        }
+
+        .fp-slides {
+            width: 100%;
+        }
+
+        @keyframes popFromRight {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                transform: translate(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes circle {
+            0% {
+                clip-path: circle(0% at 100% 50%);
+            }
+
+            100% {
+                clip-path: circle(50% at 100% 50%);
+            }
+        }
+
+        /* Add custom styles to each section */
+        #fullpage .section:nth-child(1) {
+            background-color: rgb(255, 166, 0);
+
+        }
+
+        #fullpage .section:nth-child(1) #welcome-content {
+            position: absolute;
+            top: 20%;
+            left: 30%;
+
+            animation: fadein 1.3s;
+
+        }
+
+
+
+        @keyframes fadein {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        #fullpage .section:nth-child(2) {
+            background-color: #00FF00;
+        }
+
+        #fullpage .section:nth-child(3) {
+            color: blue;
+            background-color: #FFFF00;
+        }
+
+        #fullpage .section:nth-child(4) {
+            background-color: #000000;
+            color: #FFFFFF;
+        }
+
+        h1 {
+            font-size: 5rem;
+        }
+
+        h2 {
+            font-size: 3rem;
+        }
+
+        p {
+            line-height: 1.6;
+            max-width: 600px;
+        }
+
+        .section:not(#features):hover,
+        .slide:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+
+
+        #features h1,
+        #aboutus h1 {
+            position: absolute;
+            top: 0;
+        }
+
+        #features h3 {
+            font-size: 4rem;
+        }
+
+        .slide-content {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        #aboutus {
+            text-align: center;
+        }
+
+
+        #touristes {
+            display: grid;
+            grid-template-columns: repeat(4, 300px);
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .touriste img {
+            height: 300px;
+        }
+    </style>
 </head>
 
 <body>
-
     <div id="fullpage">
-        <div class="section">
-            Welcome !
+        <div class="section" id="welcome">
+            <div id="welcome-content">
+                <h1>GameSync</h1>
+                <p>
+                    j'encule vos dar
+                </p>
+            </div>
+            <div id="presentation-block">
+                <img src="/bg.jpg" />
+            </div>
+        </div>
+        <div class="section " id="features">
+            <h1>Features</h1>
+            <div class="slide">
+                <div class="slide-content">
+                    <h3>Feature 1</h3>
+                    <p>trucs genre des images ou je sais pas </p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h3>Feature 2</h3>
+                    <p>Encore plus de trucs</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h3>Une dernière pour la route</h3>
+                    <p>Des trucs</p>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="aboutus">
+            <h1>Développeurs</h1>
+            <br />
+            <h3>Bra K.C. Production ™</h3>
+            <div id="touristes">
+                <div class="touriste">
+                    <img src="/bg.jpg" />
+                    <h3>Connard numéro 1</h3>
+                </div>
+
+                <div class="touriste">
+                    <img src="/bg.jpg" />
+                    <h3>Connard numéro 2</h3>
+                </div>
+
+                <div class="touriste">
+                    <img src="/bg.jpg" />
+                    <h3>Connard numéro 3</h3>
+                </div>
+
+
+                <div class="touriste">
+                    <img src="/bg.jpg" />
+                    <h3>Connard numéro 4</h3>
+                </div>
+            </div>
         </div>
         <div class="section">
-            Our fabulous game
+            <h2>Coming Soon</h2>
+            <p>pourquoi ma vie c'est de la merde</p>
         </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.js"
         integrity="sha512-LGiXf+jHGTHcIybSsOWO3I/in+OObCkcEsWIZ7IyhzfD6RzD5qDUw2CK+JveuI7zTSEcDG//bIOvOpAJW2BWsg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
     <script>
         new fullpage('#fullpage', {
-            //options here
-            autoScrolling: true,
-            scrollHorizontally: true,
-            licenseKey: "gplv3-license"
+            // Add any additional options for the fullpage.js library if needed
         });
     </script>
 </body>
 
-</html
+</html>
