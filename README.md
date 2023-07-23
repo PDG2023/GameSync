@@ -1,5 +1,3 @@
 # GamesSync
 
-## Host
-Registre dans azure registry (compte de Kevin Ferati)
-
+Ce répertoire contient les fichiers statiques (schémas, landing page, ...) non-requis pour le bon fonctionnement de GameSync.
