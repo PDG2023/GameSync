@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Board Games Party App</title>
+    <title>GameSync - Coming Soon</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.css"
         integrity="sha512-otONSJGv1l0LjJXcgyqi2MeKXtnthkiXAleeQjFJOKYcVD5u+mOuPb7xCnlsb74Ld+N0ONbP7KYRmW2/OWrvaA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,23 +16,13 @@
             font-family: Arial, sans-serif;
         }
 
-        .section {
-            padding: 2rem;
-            color: white;
-            font-size: 1.5rem;
+        h1 {
+            margin: 0;
+            padding-top: 4rem;
         }
 
         /* Style the sections */
-        .section:not(#welcome) {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-
         #presentation-block {
-            background-color: rgb(240, 136, 0);
             position: absolute;
             top: 0;
             left: 0;
@@ -49,7 +39,6 @@
         }
 
         #presentation-block img {
-
             float: right;
             height: 300px;
             animation-delay: 1.8s !important;
@@ -58,9 +47,6 @@
             animation: popFromRight 2.5s;
         }
 
-        .fp-slides {
-            width: 100%;
-        }
 
         @keyframes popFromRight {
             0% {
@@ -85,19 +71,16 @@
 
         /* Add custom styles to each section */
         #fullpage .section:nth-child(1) {
-            background-color: rgb(255, 166, 0);
 
         }
 
         #fullpage .section:nth-child(1) #welcome-content {
-            position: absolute;
-            top: 20%;
-            left: 30%;
-
             animation: fadein 1.3s;
-
         }
 
+        .section h1 {
+            
+        }
 
 
         @keyframes fadein {
@@ -111,20 +94,20 @@
         }
 
         #fullpage .section:nth-child(2) {
-            background-color: #00FF00;
         }
 
         #fullpage .section:nth-child(3) {
-            color: blue;
-            background-color: #FFFF00;
         }
 
         #fullpage .section:nth-child(4) {
-            background-color: #000000;
-            color: #FFFFFF;
+        }
+
+        .section {
+            background-color: white;
         }
 
         h1 {
+            text-align: center;
             font-size: 5rem;
         }
 
@@ -132,49 +115,70 @@
             font-size: 3rem;
         }
 
-        p {
-            line-height: 1.6;
-            max-width: 600px;
+        h3 {
+            font-size: 2rem;
+        }
+        
+        .fp-arrow.fp-prev {
+            border-color: transparent #D3D3D3 transparent transparent;
         }
 
-        .section:not(#features):hover,
-        .slide:hover {
-            transform: scale(1.05);
-            transition: transform 0.3s ease;
+        .fp-arrow.fp-next {
+            border-color: transparent transparent transparent #D3D3D3;
         }
 
 
-        #features h1,
-        #aboutus h1 {
-            position: absolute;
-            top: 0;
+        .fp-arrow {
+            border-color: black;
         }
-
-        #features h3 {
-            font-size: 4rem;
-        }
-
-        .slide-content {
-            display: grid;
-            grid-template-columns: 50% 50%;
-            align-items: center;
-            justify-content: flex-start;
-        }
-
-        #aboutus {
-            text-align: center;
-        }
-
 
         #touristes {
             display: grid;
-            grid-template-columns: repeat(4, 300px);
-            gap: 15px;
+            grid-template-columns: repeat(4, 15%);
+            gap: 60px;
             justify-content: center;
         }
 
         .touriste img {
-            height: 300px;
+            max-height: 100%;
+            max-width: 100%;;
+        }
+
+        .slide-content {
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+
+        }   
+
+        
+        @media (max-width: 800px) {
+            
+            .slide-content {
+                flex-direction: column;
+                display: flex;
+            }   
+        }
+
+        @media (min-width: 800px) {
+            
+            .slide-content {
+                display: grid;
+                text-align: center;
+                grid-template-columns: 50% 50%;
+                
+            }   
+        }
+
+
+        #features h1 {
+            position: absolute;
+            text-align: center;
+            width: 100%;
+        }
+
+        .slide > * {
+            height: 100%;
         }
     </style>
 </head>
@@ -214,9 +218,7 @@
             </div>
         </div>
         <div class="section" id="aboutus">
-            <h1>Développeurs</h1>
-            <br />
-            <h3>Bra K.C. Production ™</h3>
+            <h1>About Us</h1>
             <div id="touristes">
                 <div class="touriste">
                     <img src="/bg.jpg" />
@@ -241,7 +243,7 @@
             </div>
         </div>
         <div class="section">
-            <h2>Coming Soon</h2>
+            <h1>Coming Soon</h1>
             <p>pourquoi ma vie c'est de la merde</p>
         </div>
     </div>
@@ -251,7 +253,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         new fullpage('#fullpage', {
-            // Add any additional options for the fullpage.js library if needed
+            verticalCentered: false
         });
     </script>
 </body>
