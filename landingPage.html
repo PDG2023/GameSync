@@ -10,6 +10,68 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
+        *{
+            --palette1A: #FFBE0B;
+            --palette1B: #FD8A09;
+            --palette1C: #FB5607;
+            --palette1D: #780116;
+            --palette1E: #3D0814;
+
+            --palette2A: #104F55;
+            --palette2B: #32746D;
+            --palette2C: #A1EF8B;
+            --palette2D: #01200F;
+            --palette2E: #011502;
+
+            --palette3A: #050505;
+            --palette3B: #1B9AAA;
+            --palette3C: #DDDBCB;
+            --palette3D: #9368B7;
+            --palette3E: #AA3E98;
+
+            --palette4A: #050505;
+            --palette4B: #1B9AAA;
+            --palette4C: #DDDBCB;
+            --palette4D: #FB3640;
+            --palette4E: #A44200;
+
+            --palette5A: #050505;
+            --palette5B: #1B9AAA;
+            --palette5C: #FF6663;
+            --palette5D: #E0FF4F;
+            --palette5E: #EEE0CB;
+
+            --palette6A: #DD1155;
+            --palette6B: #5FAD42;
+            --palette6C: #2D936C;
+            --palette6D: #391463;
+            --palette6E: #3A0842;
+
+            --palette7A: #31393C;
+            --palette7B: #2176FF;
+            --palette7C: #33A1FD;
+            --palette7D: #FDCA40;
+            --palette7E: #F79824;
+
+            --palette8A: #616163;
+            --palette8B: #44FFD2;
+            --palette8C: #33A1FD;
+            --palette8D: #FDCA40;
+            --palette8E: #F79824;
+
+            --palette9A: #FB6107;
+            --palette9B: #F3DE2C;
+            --palette9C: #7CB518;
+            --palette9D: #5C8001;
+            --palette9E: #FBB02D;
+
+            --palette10A: #50FFB1;
+            --palette10B: #4FB286;
+            --palette10C: #3C896D;
+            --palette10D: #546D64;
+            --palette10E: #4D685A;
+        }
+
         body {
             margin: 0;
             padding: 0;
@@ -19,6 +81,11 @@
         h1 {
             margin: 0;
             padding-top: 4rem;
+        }
+
+        .foreground{
+            position: relative;
+            z-index: 100;
         }
 
         /* Style the sections */
@@ -36,6 +103,8 @@
             align-items: center;
             justify-content: flex-end;
 
+            background-color: var(--palette2C);
+            z-index: 1;
         }
 
         #presentation-block img {
@@ -71,7 +140,7 @@
 
         /* Add custom styles to each section */
         #fullpage .section:nth-child(1) {
-
+            background-image: linear-gradient(var(--palette2B), var(--palette2A));
         }
 
         #fullpage .section:nth-child(1) #welcome-content {
@@ -94,12 +163,15 @@
         }
 
         #fullpage .section:nth-child(2) {
+            background-image: linear-gradient(var(--palette5B), var(--palette5B), var(--palette5A));
         }
 
         #fullpage .section:nth-child(3) {
+            background-image: linear-gradient(var(--palette1A), var(--palette1B));
         }
 
         #fullpage .section:nth-child(4) {
+            background-image: linear-gradient(var(--palette9A), var(--palette9B));
         }
 
         .section {
@@ -187,10 +259,12 @@
     <div id="fullpage">
         <div class="section" id="welcome">
             <div id="welcome-content">
-                <h1>GameSync</h1>
-                <p>
-                    j'encule vos dar
-                </p>
+                <div class="foreground">
+                    <h1>GameSync</h1>
+                    <p>
+                        j'encule vos dar
+                    </p>
+                </div>
             </div>
             <div id="presentation-block">
                 <img src="/bg.jpg" />
