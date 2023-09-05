@@ -4,7 +4,7 @@
  <chain id="chain4" out="00:00:14.000">
   <property name="length">351</property>
   <property name="eof">pause</property>
-  <property name="resource">videos/1.MOV</property>
+  <property name="resource">Clips/1.MOV</property>
   <property name="mlt_service">avformat-novalidate</property>
   <property name="meta.media.nb_streams">5</property>
   <property name="meta.media.0.stream.type">audio</property>
@@ -72,7 +72,7 @@
  <chain id="chain5" out="00:00:08.520">
   <property name="length">214</property>
   <property name="eof">pause</property>
-  <property name="resource">videos/2.MOV</property>
+  <property name="resource">Clips/2.MOV</property>
   <property name="mlt_service">avformat-novalidate</property>
   <property name="meta.media.nb_streams">5</property>
   <property name="meta.media.0.stream.type">audio</property>
@@ -140,7 +140,7 @@
  <chain id="chain1" out="00:00:14.920">
   <property name="length">374</property>
   <property name="eof">pause</property>
-  <property name="resource">C:/Users/flagu/Videos/gamesync.mkv</property>
+  <property name="resource">ScreenRecords/gamesync.mkv</property>
   <property name="mlt_service">avformat-novalidate</property>
   <property name="meta.media.nb_streams">2</property>
   <property name="meta.media.0.stream.type">video</property>
@@ -194,7 +194,7 @@
  <chain id="chain6" out="00:00:41.120">
   <property name="length">1029</property>
   <property name="eof">pause</property>
-  <property name="resource">C:/Users/flagu/Videos/inscription.mkv</property>
+  <property name="resource">ScreenRecords/inscription.mkv</property>
   <property name="mlt_service">avformat-novalidate</property>
   <property name="meta.media.nb_streams">2</property>
   <property name="meta.media.0.stream.type">video</property>
@@ -248,7 +248,7 @@
  <chain id="chain7" out="00:00:22.960">
   <property name="length">575</property>
   <property name="eof">pause</property>
-  <property name="resource">C:/Users/flagu/Videos/validation.mkv</property>
+  <property name="resource">ScreenRecords/validation.mkv</property>
   <property name="mlt_service">avformat-novalidate</property>
   <property name="meta.media.nb_streams">2</property>
   <property name="meta.media.0.stream.type">video</property>
@@ -302,7 +302,7 @@
  <chain id="chain10" out="00:00:23.240">
   <property name="length">582</property>
   <property name="eof">pause</property>
-  <property name="resource">C:/Users/flagu/Videos/ajout_favoris.mkv</property>
+  <property name="resource">ScreenRecords/ajout_favoris.mkv</property>
   <property name="mlt_service">avformat-novalidate</property>
   <property name="meta.media.nb_streams">2</property>
   <property name="meta.media.0.stream.type">video</property>
@@ -356,7 +356,7 @@
  <chain id="chain11" out="00:00:36.320">
   <property name="length">909</property>
   <property name="eof">pause</property>
-  <property name="resource">C:/Users/flagu/Videos/ajout_jeu_perso.mkv</property>
+  <property name="resource">ScreenRecords/ajout_jeu_perso.mkv</property>
   <property name="mlt_service">avformat-novalidate</property>
   <property name="meta.media.nb_streams">2</property>
   <property name="meta.media.0.stream.type">video</property>
@@ -410,7 +410,7 @@
  <chain id="chain12" out="00:00:16.920">
   <property name="length">424</property>
   <property name="eof">pause</property>
-  <property name="resource">C:/Users/flagu/Videos/connexion.mkv</property>
+  <property name="resource">ScreenRecords/connexion.mkv</property>
   <property name="mlt_service">avformat-novalidate</property>
   <property name="meta.media.nb_streams">2</property>
   <property name="meta.media.0.stream.type">video</property>
@@ -510,7 +510,7 @@
  <chain id="chain0" out="00:04:25.000">
   <property name="length">6626</property>
   <property name="eof">pause</property>
-  <property name="resource">Jacoo - Crossing Winds (Original Mix).mp3</property>
+  <property name="resource">Audio/Jacoo - Crossing Winds (Original Mix).mp3</property>
   <property name="mlt_service">avformat-novalidate</property>
   <property name="seekable">1</property>
   <property name="audio_index">0</property>
@@ -589,7 +589,7 @@
  <chain id="chain2" out="00:00:14.000">
   <property name="length">351</property>
   <property name="eof">pause</property>
-  <property name="resource">videos/1.MOV</property>
+  <property name="resource">Clips/1.MOV</property>
   <property name="mlt_service">avformat-novalidate</property>
   <property name="seekable">1</property>
   <property name="audio_index">0</property>
@@ -659,7 +659,7 @@
  <chain id="chain3" out="00:00:08.520">
   <property name="length">214</property>
   <property name="eof">pause</property>
-  <property name="resource">videos/2.MOV</property>
+  <property name="resource">Clips/2.MOV</property>
   <property name="mlt_service">avformat-novalidate</property>
   <property name="seekable">1</property>
   <property name="audio_index">0</property>
@@ -729,7 +729,7 @@
  <chain id="chain8" out="00:00:02.920">
   <property name="length">74</property>
   <property name="eof">pause</property>
-  <property name="resource">Sans titre.webm</property>
+  <property name="resource">Renders/Sans titre.webm</property>
   <property name="mlt_service">avformat-novalidate</property>
   <property name="seekable">1</property>
   <property name="audio_index">1</property>
@@ -784,7 +784,7 @@
  <producer id="producer1" in="00:00:00.000" out="00:00:19.840">
   <property name="length">497</property>
   <property name="eof">pause</property>
-  <property name="resource">2.071300:C:/Users/flagu/Videos/inscription.mkv</property>
+  <property name="resource">2.071300:ScreenRecords/inscription.mkv</property>
   <property name="aspect_ratio">1</property>
   <property name="meta.media.nb_streams">2</property>
   <property name="meta.media.0.stream.type">video</property>
@@ -817,7 +817,7 @@
   <property name="audio_index">1</property>
   <property name="video_index">0</property>
   <property name="warp_speed">2.0713</property>
-  <property name="warp_resource">C:/Users/flagu/Videos/inscription.mkv</property>
+  <property name="warp_resource">ScreenRecords/inscription.mkv</property>
   <property name="mlt_service">timewarp</property>
   <property name="set.test_audio">1</property>
   <property name="set.test_image">0</property>
@@ -837,7 +837,7 @@
  <producer id="producer2" in="00:00:00.000" out="00:00:12.040">
   <property name="length">302</property>
   <property name="eof">pause</property>
-  <property name="resource">1.905700:C:/Users/flagu/Videos/validation.mkv</property>
+  <property name="resource">1.905700:ScreenRecords/validation.mkv</property>
   <property name="aspect_ratio">1</property>
   <property name="meta.media.nb_streams">2</property>
   <property name="meta.media.0.stream.type">video</property>
@@ -870,7 +870,7 @@
   <property name="audio_index">1</property>
   <property name="video_index">0</property>
   <property name="warp_speed">1.9057</property>
-  <property name="warp_resource">C:/Users/flagu/Videos/validation.mkv</property>
+  <property name="warp_resource">ScreenRecords/validation.mkv</property>
   <property name="mlt_service">timewarp</property>
   <property name="set.test_audio">1</property>
   <property name="set.test_image">0</property>
@@ -890,7 +890,7 @@
  <chain id="chain9" out="00:00:16.920">
   <property name="length">424</property>
   <property name="eof">pause</property>
-  <property name="resource">C:/Users/flagu/Videos/connexion.mkv</property>
+  <property name="resource">ScreenRecords/connexion.mkv</property>
   <property name="mlt_service">avformat-novalidate</property>
   <property name="seekable">1</property>
   <property name="audio_index">1</property>
@@ -946,7 +946,7 @@
  <chain id="chain13" out="00:00:23.240">
   <property name="length">582</property>
   <property name="eof">pause</property>
-  <property name="resource">C:/Users/flagu/Videos/ajout_favoris.mkv</property>
+  <property name="resource">ScreenRecords/ajout_favoris.mkv</property>
   <property name="mlt_service">avformat-novalidate</property>
   <property name="seekable">1</property>
   <property name="audio_index">1</property>
@@ -1002,7 +1002,7 @@
  <producer id="producer3" in="00:00:00.000" out="00:00:22.480">
   <property name="length">564</property>
   <property name="eof">pause</property>
-  <property name="resource">1.613100:C:/Users/flagu/Videos/ajout_jeu_perso.mkv</property>
+  <property name="resource">1.613100:ScreenRecords/ajout_jeu_perso.mkv</property>
   <property name="aspect_ratio">1</property>
   <property name="meta.media.nb_streams">2</property>
   <property name="meta.media.0.stream.type">video</property>
@@ -1035,7 +1035,7 @@
   <property name="audio_index">1</property>
   <property name="video_index">0</property>
   <property name="warp_speed">1.6131</property>
-  <property name="warp_resource">C:/Users/flagu/Videos/ajout_jeu_perso.mkv</property>
+  <property name="warp_resource">ScreenRecords/ajout_jeu_perso.mkv</property>
   <property name="mlt_service">timewarp</property>
   <property name="set.test_audio">1</property>
   <property name="set.test_image">0</property>
@@ -1055,7 +1055,7 @@
  <chain id="chain14" out="00:00:05.600">
   <property name="length">141</property>
   <property name="eof">pause</property>
-  <property name="resource">videos/3.MOV</property>
+  <property name="resource">Clips/3.MOV</property>
   <property name="mlt_service">avformat-novalidate</property>
   <property name="seekable">1</property>
   <property name="audio_index">0</property>
@@ -1260,7 +1260,7 @@
  <chain id="chain15" out="00:04:25.000">
   <property name="length">6626</property>
   <property name="eof">pause</property>
-  <property name="resource">Jacoo - Crossing Winds (Original Mix).mp3</property>
+  <property name="resource">Audio/Jacoo - Crossing Winds (Original Mix).mp3</property>
   <property name="mlt_service">avformat</property>
   <property name="meta.media.nb_streams">1</property>
   <property name="meta.media.0.stream.type">audio</property>
@@ -1286,7 +1286,7 @@
  <chain id="chain16" out="00:00:02.920">
   <property name="length">74</property>
   <property name="eof">pause</property>
-  <property name="resource">Sans titre.webm</property>
+  <property name="resource">Renders/Sans titre.webm</property>
   <property name="mlt_service">avformat-novalidate</property>
   <property name="meta.media.nb_streams">2</property>
   <property name="meta.media.0.stream.type">video</property>
@@ -1339,7 +1339,7 @@
  <chain id="chain17" out="00:00:02.920">
   <property name="length">74</property>
   <property name="eof">pause</property>
-  <property name="resource">Sans titre.webm</property>
+  <property name="resource">Renders/Sans titre.webm</property>
   <property name="mlt_service">avformat-novalidate</property>
   <property name="meta.media.nb_streams">2</property>
   <property name="meta.media.0.stream.type">video</property>
@@ -1392,7 +1392,7 @@
  <chain id="chain18" out="00:00:05.600">
   <property name="length">141</property>
   <property name="eof">pause</property>
-  <property name="resource">videos/3.MOV</property>
+  <property name="resource">Clips/3.MOV</property>
   <property name="mlt_service">avformat-novalidate</property>
   <property name="meta.media.nb_streams">5</property>
   <property name="meta.media.0.stream.type">audio</property>
@@ -1460,7 +1460,7 @@
  <chain id="chain19" out="00:04:25.000">
   <property name="length">6626</property>
   <property name="eof">pause</property>
-  <property name="resource">Jacoo - Crossing Winds (Original Mix).mp3</property>
+  <property name="resource">Audio/Jacoo - Crossing Winds (Original Mix).mp3</property>
   <property name="mlt_service">avformat</property>
   <property name="meta.media.nb_streams">1</property>
   <property name="meta.media.0.stream.type">audio</property>
@@ -1486,7 +1486,7 @@
  <chain id="chain20" out="00:00:02.920">
   <property name="length">74</property>
   <property name="eof">pause</property>
-  <property name="resource">Sans titre.webm</property>
+  <property name="resource">Renders/Sans titre.webm</property>
   <property name="mlt_service">avformat-novalidate</property>
   <property name="meta.media.nb_streams">2</property>
   <property name="meta.media.0.stream.type">video</property>
